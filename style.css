@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;500&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@400;600&family=Lora:wght@400;700&display=swap');
 
 
 :root{
@@ -15,12 +11,9 @@
     --cor06: #333333; /*Textos, descrições e ingredientes*/
     --cor07: #efdab0;
 
-    --fonte01: 'Poppins', sans-serif;
-    --fonte02: 'Open Sans', sans-serif;
-    --fonte03: 'Quicksand', sans-serif;
-    --fonte04: 'Roboto', sans-serif;
-    --fonte05: 'Pacifico', cursive;
-    --fonte06: 'Lato', sans-serif;
+    --fonte-titulo: 'Dancing Script', cursive;
+    --fonte-subtitulo: 'Josefin Sans', sans-serif;
+    --fonte-texto: 'Lora', serif;
 }
 
 *{
@@ -33,23 +26,66 @@ body{
 }
 .imagem-logo{
     width: 160px;
-    height: 150px;
+    height: 140px;
     display: block;
     margin: auto;
 }
 header{
     background-color: var(--cor07);
-    height: 200px;
+    height: 170px;
 }
 header > h1{
     text-align: center;
+    color: var(--cor02);
+    font-family: var(--fonte-titulo);
+    font-weight: bolder;
+    font-size: 2.5em;
 }
 nav{
     background-color: var(--cor07);
-    padding-top: 30px;
-    padding-bottom: 10px;
+    height: 30px;
+    padding-top: 55px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: bold;
 }
 nav > a{
     padding: 10px;
     text-decoration: none;
+    color: var(--cor01);
+}
+
+nav > a:hover{
+    background-color: var(--cor05);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main > h2{
+    text-align: center;
+    font-family: var(--fonte-subtitulo);
+    font-size: 2em;
+    color: var(--cor02);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.329);
+    padding: 35px;
+}
+
+main > section.conteudo{
+    background-image: url("imagens/img001.jpg");
+}
+
+footer{
+    background-color: var(--cor07);
+}
+
+footer > p{
+    text-align: center;
+    font-family: var(--fonte-texto);
+    padding: 4px;
+    font-size: 0.8em;
+    color: var(--cor06);
+    font-weight: bold;
 }
