@@ -87,21 +87,12 @@ main > h2{
     margin-bottom: 20px;
     
 }
-.container{
-    display: flex;           /* Coloca as receitas lado a lado */
-    flex-wrap: wrap;         /* Se não couber, quebra para a linha de baixo */
-    justify-content: center; /* Centraliza as receitas na página */
-    gap: 40px; 
-}
 
-.receita{
-    display: flex;
-    flex-direction: column; /* Mantém imagem, ingredientes e preparo em coluna */
-    align-items: center;
-}
-
-.img{
+/*bombom*/
+.img#bombom{
     background: url("imagens/foto-bombom.jpg") no-repeat;
+}
+.img{
     background-size: cover;
     width: 400px;
     height: 200px;
@@ -149,8 +140,49 @@ section#bombom ul, ol, li{
 
 }
 
-section#bombom li:hover{
+section li:hover{
     color: var(--cor06);
+}
+
+/*alfajor*/
+.img#img-alfajor{
+    background: url(imagens/foto-alfajor.jpg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+/*bolo de milho*/
+.img#img-bolo-milho{
+    background: url(imagens/foto-bolo.jpg) no-repeat;
+}
+
+/*pão de queijo*/
+.img#img-pao-queijo{
+    background: url(imagens/foto-pao-queijo.jpg) no-repeat;
+}
+
+/*macarrão ao molho brango*/
+.img#img-macarrao-branco{
+    background: url(imagens/foto-macarrao-branco.jpg) no-repeat;
+}
+
+/*lasanha*/
+.img#img-lasanha{
+    background: url(imagens/foto-lasanha.jpg) no-repeat;
+} 
+
+/*pao de queijo de frigideira*/
+.img#img-pao-queijo-frigideira{
+    background: url(imagens/pao-queijo-frigideira.jpg) no-repeat;
+}
+
+/*panqueca fit de banana*/
+.img#img-panqueca{
+    background: url(imagens/foto-panqueca.jpg) no-repeat center;
+}
+
+/*bolo fit de caneca*/
+.img#img-bolo-caneca{
+    background: url(imagens/foto-bolo-caneca.jpg) no-repeat center;
 }
 
 footer{
