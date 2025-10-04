@@ -96,7 +96,8 @@ main > h2{
 }
 .img{
     background-size: cover;
-    max-width: 350px;
+    width: 90%;
+    max-width: 300px;
     height: 200px;
     margin: 30px auto 5px auto;
     border-radius: 25px;
@@ -121,7 +122,8 @@ div.ingredientes, div.preparo{
     padding: 20px;
     border-radius: 20px;
     border: 2px solid white;
-    max-width: 350px;
+    width: 90%;
+    max-width: 300px;
     margin: 20px auto;
 }
 
